@@ -1,0 +1,32 @@
+.how-it-works {
+    .dot-curve-bg {
+        background: url(../img/dot-curve.png) no-repeat top 90px center;
+
+        @media screen and (max-width: 1199px) {
+            background-size: 70%;
+        }
+
+        @media screen and (max-width: 991px) {
+            background-image: none;
+        }
+    }
+
+    img {
+        padding: 10px 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+
+        @media screen and (max-width: 991px) {
+            width: auto;
+            height: auto;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 580px) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,415 @@
+.auth-page {
+    background-color: $lighter-primary;
+    background-image: url(../img/shapes-pattern-l.png), url(../img/shapes-pattern-r.png);
+    background-position: left 8% center, right 8% center;
+    background-repeat: no-repeat, no-repeat;
+
+    .form-check {
+        display: flex;
+        align-items: center;
+
+        .form-check-input {
+            width: 28px;
+            height: 28px;
+
+            @media (max-width: 991px) {
+                width: 24px;
+                height: 24px;
+            }
+            &:checked {
+                background-color: $primary-color;
+                border-color: $primary-color;
+                background-size: 20px;
+            }
+        }
+
+        .form-check-label {
+            font-size: 20px;
+            margin-left: 15px;
+
+            @media (max-width: 1480px) {
+                font-size: 18px;
+            }
+            @media (max-width: 991px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 1680px) {
+        background-position: left 60px center, right 60px center;
+    }
+
+    @media (max-width: 1440px) {
+        background-position: left 20px center, right 20px center;
+
+    }
+
+    @media (max-width: 1280px) {
+        background-position: left 20px bottom 200px, right 20px bottom 200px;
+        background-size: 220px auto, 220px auto;
+    }
+
+    @media (max-width: 991px) {
+        background-image: url(../img/shapes-pattern-b.png);
+        background-position: bottom 100px center;
+        background-size: contain;
+    }
+
+    .navbar-nav a.nav-link.btn-outline {
+        padding: 12px 26px !important;
+        text-transform: capitalize;
+        line-height: 22px;
+        font-size: 18px !important;
+        color: $primary-color;
+        border-color: $primary-color;
+        margin-bottom: 0;
+
+        @media screen and (max-width:1480px) {
+            padding: 10px 22px !important;
+            text-transform: capitalize;
+            line-height: 20px;
+            font-size: 16px !important;
+        }
+
+        &:hover {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .card-footer {
+        p {
+            font-size: 20px;
+
+            @media screen and (max-width:767px) {
+                font-size: 18px;
+            }
+
+            @media screen and (max-width:580px) {
+                font-size: 16px;
+            }
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+                font-weight: 500;
+
+                &:hover {
+                    color: $secondary-color-dark;
+                }
+            }
+        }
+    }
+
+    .form-group {
+        label {
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: $secondary-color-dark;
+                }
+            }
+        }
+    }
+
+    .brand_navbar {
+        height: auto;
+        background: transparent;
+        box-shadow: none;
+        padding-top: 30px !important;
+
+        @media screen and (max-width:767px) {
+            padding-top: 20px !important;
+        }
+    }
+
+    .collapse:not(.show) {
+        display: flex;
+        flex-basis: auto;
+        flex-grow: unset;
+        width: auto;
+        position: relative;
+        top: 0;
+        padding-top: 0;
+        background: transparent;
+        margin: 0;
+
+        @media screen and (max-width:767px) {
+            box-shadow: none;
+        }
+    }
+
+    .form-body {
+        background-color: #fff;
+        box-shadow: 0px 0px 50px rgba(98, 98, 98, 0.1);
+        border-bottom-left-radius: 40px;
+
+        .form-group-wrapper {
+            padding: 45px 40px 55px;
+
+            @media screen and (max-width:1580px) {
+                padding: 35px 35px 45px;
+            }
+
+            @media screen and (max-width:580px) {
+                padding: 28px 25px 40px
+            }
+        }
+    }
+
+    footer {
+        background: transparent;
+        padding-top: 0;
+
+        .container-fluid {
+            border-top: 1px solid #d7cac1;
+            margin-top: 0;
+
+            p {
+                color: $text-color;
+            }
+
+        }
+    }
+}
+
+form {
+    .card-body {
+        padding: 0;
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+
+        @media screen and (max-width:580px) {
+            margin-bottom: 22px;
+        }
+
+        &>label {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 14px;
+
+            @media screen and (max-width:1480px) {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 12px;
+            }
+
+            @media screen and (max-width:480px) {
+                font-size: 16px;
+            }
+
+            span {
+                color: red;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+        input.form-control {
+            height: 72px;
+            font-size: 22px;
+            padding: 0 20px;
+            border-radius: 12px;
+            font-weight: 300;
+
+            @media screen and (max-width:1480px) {
+                height: 64px;
+                font-size: 20px;
+            }
+
+            &:focus {
+                box-shadow: none;
+                border-color: $primary-color;
+            }
+
+            @media screen and (max-width:767px) {
+                height: 62px;
+                font-size: 20px;
+            }
+
+            @media screen and (max-width:580px) {
+                height: 58px;
+                font-size: 18px;
+            }
+
+            @media screen and (max-width:480px) {
+                height: 54px;
+                font-size: 17px;
+            }
+        }
+
+        textarea {
+            font-size: 22px;
+            font-weight: 300;
+            border-radius: 12px;
+            padding: 15px 20px;
+
+            &:focus {
+                box-shadow: none;
+                border-color: $primary-color;
+            }
+
+            @media screen and (max-width:767px) {
+                font-size: 20px;
+            }
+
+        }
+    }
+}
+
+.users-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 24px;
+    padding: 30px 40px;
+
+    @media screen and (max-width:1580px) {
+        padding: 22px 30px;
+    }
+
+    @media screen and (max-width:1480px) {
+        padding: 20px 30px;
+    }
+
+    @media screen and (max-width:580px) {
+        padding: 18px 15px;
+    }
+
+    @media screen and (max-width:375px) {
+        flex-wrap: wrap;
+    }
+
+    li {
+        margin: 0 20px;
+
+        @media screen and (max-width:580px) {
+            margin: 0 10px;
+            width: 100%;
+        }
+    }
+}
+
+.users-type input {
+    display: none;
+}
+
+.users-type label {
+    position: relative;
+    color: #333;
+    font-size: 22px;
+    padding-left: 51px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 36px;
+
+    @media screen and (max-width:1580px) {
+        font-size: 21px;
+    }
+
+    @media screen and (max-width:1480px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width:580px) {
+        font-size: 18px;
+        line-height: 32px;
+        padding-left: 48px;
+    }
+
+    @media screen and (max-width:375px) {
+        line-height: 34px;
+    }
+
+}
+
+.users-type input+label:after {
+    content: "";
+    border: 1px solid #ddd;
+    line-height: 28px;
+    border-radius: 100%;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+
+    @media screen and (max-width:580px) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.users-type input:checked+label:after {
+    border-color: $secondary-color;
+}
+
+.users-type input:checked+label:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: $secondary-color;
+    z-index: 999;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    z-index: 10000;
+
+    @media screen and (max-width:580px) {
+        width: 16px;
+        height: 16px;
+        left: 7px;
+        top: 7px;
+    }
+}
+
+.users-type-2 {
+    padding: 0;
+    justify-content: space-between;
+    border-bottom: 0;
+
+    @media screen and (max-width:580px) {
+        flex-wrap: wrap;
+    }
+
+    label {
+        font-size: 20px;
+
+        @media screen and (max-width:991px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width:480px) {
+            font-size: 16px;
+        }
+    }
+
+    li {
+        background: #ececec;
+        margin: 0;
+        padding: 14px 24px;
+        width: 48%;
+        border-radius: 6px;
+
+        @media screen and (max-width:767px) {
+            width: 100%;
+            border-radius: 0;
+            margin-bottom: 10px;
+            padding: 10px 16px 8px;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.accordion {
+    width: 1090px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px rgba(98, 98, 98, 0.1);
+
+    @media (max-width: 1199px) {
+        width: 100%;
+    }
+
+    &-item {
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        background: transparent;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &-button:not(.collapsed) {
+        color: $primary-color;
+        background-color: #fff;
+        box-shadow: none;
+    }
+
+    .accordion-button {
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: 500;
+        font-family: $primary-font;
+        color: $text-color;
+        padding: 22px 40px;
+        outline: 0;
+
+        @media (max-width: 991px) {
+            font-size: 24px;
+            line-height: 30px;
+            padding: 18px 30px;
+        }
+
+        @media (max-width: 580px) {
+            font-size: 18px;
+            line-height: 24px;
+            padding: 14px 0;
+        }
+
+        &::after {
+            width: 52px;
+            height: 52px;
+            background-size: 22px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            background-image: url(../img/icons/arrow-down.png);
+            background-position: center center;
+
+            @media (max-width: 991px) {
+                width: 44px;
+                height: 44px;
+                background-size: 18px;
+            }
+            @media (max-width: 580px) {
+                width: 34px;
+                height: 34px;
+                background-size: 16px;
+            }
+        }
+
+        &:focus {
+            outline: 0;
+            border: 0;
+            box-shadow: none;
+        }
+    }
+
+    .accordion-body {
+        font-size: 22px;
+        line-height: 40px;
+        font-weight: 400;
+        font-family: $primary-font;
+        color: $text-color;
+        padding: 0 40px 20px;
+        @media (max-width: 991px) {
+            font-size: 18px;
+            line-height: 30px;
+            padding: 0 30px 20px;
+        }
+        @media (max-width:580px) {
+            
+            padding: 0 20px 20px;
+        }
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url(../img/icons/arrow-up.png);
+        border-color: $primary-color !important;
+        transform: none;
+    }
+}

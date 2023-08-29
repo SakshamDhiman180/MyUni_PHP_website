@@ -1,0 +1,94 @@
+.create_account {
+    padding-left: 90px;
+    padding-right: 90px;
+    @media (max-width: 1199px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media (max-width: 991px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .create_account_bg {
+        position: relative;
+
+        img:first-child {
+            height: 680px;
+            border-top-right-radius: 100px;
+            object-fit: cover;
+
+            @media (max-width: 1366px) {
+                height: 560px;
+                border-top-right-radius: 80px;
+            }
+            @media (max-width: 991px) {
+                height: auto;
+                border-top-right-radius: 70px;
+            }
+            @media (max-width: 768px) {
+                border-top-right-radius: 60px;
+            }
+        }
+
+        .giving-logo {
+            position: absolute;
+            bottom: -70px;
+            width: 360px;
+            right: 0;
+
+            @media (max-width: 1366px) {
+                width: 320px;
+            }
+            @media (max-width: 991px) {
+                width: 280px;
+                bottom: inherit;
+                right: inherit;
+                top: 0;
+                left: 15px;
+            }
+            @media (max-width: 768px) {
+                width: 240px;
+            }
+            @media (max-width: 580px) {
+                width: 200px;
+            }
+        }
+    }
+
+    .card {
+        margin-left: -100px;
+        border-bottom-left-radius: 60px;
+        box-shadow: 0px 15px 40px rgba(98, 98, 98, 0.1);
+        width: 760px;
+        padding: 50px 50px 58px;
+
+        @media (max-width: 1366px) {
+            width: 490px;
+            padding: 35px 40px 45px;
+        }
+
+        @media (max-width: 1199px) {
+            width: 572px;
+            border-bottom-left-radius: 50px;
+        }
+
+        @media (max-width: 991px) {
+            margin-left: 0;
+            width: 100%;
+            padding: 25px 30px 35px;
+            border-bottom-left-radius: 40px;
+            h4 {
+                br {
+                    display: none;
+                }
+            }
+        }
+        @media (max-width: 580px) {
+            border-bottom-left-radius: 30px;
+            h2, h4 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}

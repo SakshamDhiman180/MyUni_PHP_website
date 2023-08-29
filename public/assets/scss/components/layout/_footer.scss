@@ -1,0 +1,133 @@
+.footer {
+    background-color: $primary-color;
+    background-image: url(../img/heart-love.png), url(../img/shapes-pattern-b-4.png);
+    background-position: right bottom -400px, right 50px bottom 50px;
+    background-repeat: no-repeat, no-repeat;
+    padding-top: 190px;
+
+    @media screen and (max-width:767px) {
+        text-align: center;
+        background-size: 100% auto, 33% auto;
+        background-position: right bottom, right 50px bottom 50px;
+    }
+
+    .footer-sub-heading {
+        font-size: 32px;
+        line-height: 44px;
+        font-weight: 500;
+    }
+
+    .nav-link {
+        color: #fff;
+        padding: 0;
+        margin-bottom: 12px;
+        font-size: 18px;
+        font-weight: 400;
+        opacity: 0.8;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 90px;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: $secondary-color;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+
+            @media (max-width: 767px) {
+                right: 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        &:hover {
+            opacity: 0.6;
+
+            &::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+
+    h6 {
+        font-size: 22px;
+        color: #fff;
+        margin-bottom: 26px;
+    }
+
+    .social-wrapper {
+
+        @media screen and (max-width:767px) {
+            justify-content: center;
+        }
+
+        h6 {
+            font-size: 14px;
+            font-family: $primary-font;
+            font-weight: 500;
+            margin-right: 20px;
+        }
+    }
+
+    .container-fluid {
+        border-top: 1px solid #ffffff47;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 70px;
+
+        @media screen and (max-width:767px) {
+            margin-top: 20px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        @media screen and (max-width:580px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            color: rgb(255 255 255 / 81%);
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+.highlight-feature {
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 10;
+
+    @media screen and (max-width:786px) {
+        padding-top: 70px;
+    }
+
+    .card {
+        background-color: $lighter-primary;
+        border: 0;
+        border-radius: 0;
+        border-bottom-right-radius: 80px;
+
+        .card-body {
+            padding: 40px 80px;
+
+            @media screen and (max-width: 991px) {
+                padding: 40px;
+            }
+
+            h2 {
+                @media screen and (max-width: 580px) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

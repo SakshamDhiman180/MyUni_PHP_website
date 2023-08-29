@@ -1,0 +1,25 @@
+
+// ABSTRACTS FILES
+@import "components/abstracts/variables";
+@import "components/abstracts/mixins";
+
+// BASE FILES
+@import "components/base/_reset";
+@import "components/base/_fonts";
+@import "components/base/_classes";
+
+// LAYOUT FILES
+
+// RWD FILES
+@import "components/layout/_header";
+@import "components/layout/_above-the-fold";
+@import "components/layout/account";
+@import "components/layout/how-works";
+@import "components/layout/_video";
+@import "components/layout/_testimonial";
+@import "components/layout/_why-us";
+@import "components/layout/_accordion";
+@import "components/layout/rwd";
+@import "components/layout/footer";
+@import "components/layout/contact";
+@import "components/layout/auth";

@@ -1,0 +1,62 @@
+// GILROY FONT
+@font-face {
+    font-family: 'gilroy, sans-serif';
+    src: url('../fonts/gilroy-bold-webfont.woff2') format('woff2'),
+        url('../fonts/gilroy-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy, sans-serif';
+    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+        url('../fonts/gilroy-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroy, sans-serif';
+    src: url('../fonts/gilroy-regular-webfont.woff2') format('woff2'),
+        url('../fonts/gilroy-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroy, sans-serif';
+    src: url('../fonts/gilroy-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/gilroy-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+// EINA FONT
+@font-face {
+    font-family: 'Eina, sans-serif';
+    src: url('../fonts/eina-bold-webfont.woff2') format('woff2'),
+         url('../fonts/eina-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Eina, sans-serif';
+    src: url('../fonts/eina-light-webfont.woff2') format('woff2'),
+         url('../fonts/eina-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Eina, sans-serif';
+    src: url('../fonts/eina-regular-webfont.woff2') format('woff2'),
+         url('../fonts/eina-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Eina, sans-serif';
+    src: url('../fonts/eina-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/eina-semibold-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}

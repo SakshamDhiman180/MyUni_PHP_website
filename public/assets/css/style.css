@@ -1,0 +1,11 @@
+#chat-messages
+{
+  min-height: 280px;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid #ccc !important;
+  border-radius: 10px !important;
+  height: 58px !important;
+  padding-top: 10px !important;
+}

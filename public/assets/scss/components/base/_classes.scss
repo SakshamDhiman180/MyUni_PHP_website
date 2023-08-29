@@ -1,0 +1,533 @@
+// HEADING CLASS
+h1 {
+    font-size: 70px;
+    line-height: 78px;
+    font-weight: 700;
+    color: $primary-color;
+
+    @media screen and (max-width: 1680px) {
+        font-size: 60px;
+        line-height: 68px;
+    }
+
+    @media screen and (max-width: 1366px) {
+        font-size: 54px;
+        line-height: 66px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+    @media screen and (max-width: 991px) {
+        font-size: 48px;
+        line-height: 54px;
+
+        br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    @media screen and (max-width: 580px) {
+        font-size: 40px;
+        line-height: 42px;
+        padding: 0;
+    }
+
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 58px;
+    color: $primary-color;
+    font-weight: 700;
+
+    @media screen and (max-width: 1366px) {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    @media screen and (max-width: 580px) {
+        font-size: 34px;
+        line-height: 42px;
+        padding: 0;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 54px;
+    color: $primary-color;
+    font-family: $primary-font;
+    font-weight: 700;
+
+    @media screen and (max-width: 1366px) {
+        font-size: 34px;
+        line-height: 46px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        line-height: 44px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+
+    @media screen and (max-width: 580px) {
+        padding: 0;
+    }
+}
+
+h4 {
+    font-size: 30px;
+    line-height: 44px;
+    color: $text-color;
+    font-family: $primary-font;
+    font-weight: 400;
+
+    @media screen and (max-width: 1680px) {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    @media screen and (max-width: 1366px) {
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+        br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 580px) {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 0 20px;
+    }
+}
+
+h5 {
+    font-size: 28px;
+    line-height: 38px;
+    color: $text-color;
+    font-family: $primary-font;
+    font-weight: 400;
+
+    @media screen and (max-width: 1680px) {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    @media screen and (max-width: 1366px) {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+        br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 580px) {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 20px;
+    }
+}
+
+p {
+    font-size: 24px;
+    line-height: 38px;
+    color: $text-color;
+
+    @media screen and (max-width: 1280px) {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    @media screen and (max-width: 580px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+ul {
+    li {
+        font-size: 24px;
+        line-height: 38px;
+        font-weight: 500;
+        color: $text-color;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 22px;
+            line-height: 34px;
+        }
+
+        @media screen and (max-width: 580px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    &.ul-style-1 {
+        padding-left: 25px;
+        li {
+            list-style: disc;
+        }
+    }
+}
+
+.btn-primary {
+    background-color: $secondary-color;
+    border: 2px solid $secondary-color;
+    font-family: $primary-font;
+    font-size: 22px;
+    padding: 24px 30px 24px 44px;
+    border-radius: 50px;
+    font-weight: 500;
+    box-shadow: 0px 16px 30px 5px rgb(160 116 108 / 23%);
+
+    @media screen and (max-width: 1440px) {
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 20px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 36px;
+        padding-right: 22px;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 580px) {
+        padding-left: 28px;
+        padding-right: 14px;
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: $secondary-color-dark;
+        border-color: $secondary-color-dark;
+    }
+
+    svg {
+        margin-left: 10px;
+    }
+
+    .arrow-icon {
+        position: relative;
+        top: -1px;
+        -webkit-transition: -webkit-transform 0.3s ease;
+        transition: -webkit-transform 0.3s ease;
+        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+        vertical-align: middle;
+
+        g {
+            stroke: #fff;
+        }
+    }
+
+    .arrow-icon--circle {
+        transition: stroke-dashoffset .3s ease;
+        stroke-dasharray: 95;
+        stroke-dashoffset: 95;
+    }
+
+    &:hover {
+        .arrow-icon {
+            transform: translate3d(5px, 0, 0);
+        }
+
+        .arrow-icon--circle {
+            stroke-dashoffset: 0;
+        }
+    }
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: $secondary-color;
+    border: 2px solid $secondary-color;
+    font-family: $primary-font;
+    font-size: 22px;
+    padding: 24px 30px 24px 44px;
+    border-radius: 50px;
+    font-weight: 500;
+
+    @media screen and (max-width: 1440px) {
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 20px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 36px;
+        padding-right: 22px;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 580px) {
+        padding-left: 26px;
+        padding-right: 12px;
+        font-size: 18px;
+    }
+
+    svg {
+        margin-left: 10px;
+    }
+
+    .arrow-icon {
+        position: relative;
+        top: -1px;
+        -webkit-transition: -webkit-transform 0.3s ease;
+        transition: -webkit-transform 0.3s ease;
+        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+        vertical-align: middle;
+
+        g {
+            stroke: $secondary-color;
+        }
+    }
+
+    .arrow-icon--circle {
+        transition: stroke-dashoffset .3s ease;
+        stroke-dasharray: 95;
+        stroke-dashoffset: 95;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border-color: $secondary-color-dark;
+        color: $secondary-color-dark;
+
+        .arrow-icon {
+            transform: translate3d(5px, 0, 0);
+        }
+
+        g {
+
+            stroke: $secondary-color-dark;
+        }
+
+        .arrow-icon--circle {
+            stroke-dashoffset: 0;
+            stroke: $secondary-color-dark;
+        }
+    }
+}
+
+.btn-secondary {
+    background: $primary-color;
+    color: #fff !important;
+    padding: 8px 22px !important;
+    font-family: $primary-font;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px !important;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    transition: all 0.3s;
+    &:hover {
+        background: $primary-color-dark;
+    }
+}
+
+// BORDER HEADING
+.divider-full {
+    margin-top: 140px;
+    background: #f6f5f5;
+    width: 100%;
+    height: 4px;
+}
+
+
+// FOR ACCORDION DROPDOWN
+span.plusicon {
+    color: transparent;
+    float: right;
+    width: 32px;
+    height: 32px;
+    background: #f5c8c2;
+    border: 1px solid #f5c8c2;
+    top: -3px;
+    border-radius: 100%;
+    position: relative;
+}
+
+span.plusicon:before {
+    width: 12px;
+    height: 12px;
+    content: "";
+    background: url(../images/icons/arrow-down.png);
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.collapsed {
+    span.plusicon {
+        background: #fff;
+        border: 1px solid #e7e7e7;
+    }
+
+    span.plusicon:before {
+        transform: rotate(0deg);
+    }
+}
+
+//padding
+.padding-tb {
+    padding-top: 170px;
+    padding-bottom: 170px;
+
+    @media (max-width: 1580px) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    @media (max-width: 1280px) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    @media (max-width: 991px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media (max-width: 580px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.text-dark {
+    color: $text-color !important;
+}
+
+.pattern-img {
+    margin-top: -100px !important;
+    height: auto !important;
+    position: relative;
+    z-index: -1;
+    width: auto !important;
+    margin: 0 auto;
+    display: flex;
+
+    @media (max-width: 768px) {
+        width: 92% !important;
+    }
+}
+
+.pattern-img-long {
+
+    @media (max-width: 1580px) {
+        width: 98% !important;
+    }
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    color: #fff;
+    background-color: $secondary-color-dark;
+    border-color: $secondary-color-dark;
+    box-shadow: 0 0 0 0.25rem #c4675187;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #c4675187;
+}
+
+.btn-check:active+.btn-primary,
+.btn-check:checked+.btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $secondary-color-dark;
+    border-color: $secondary-color-dark;
+}
+
+.btn-check:active+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem #c4675187;
+}
+
+// WIDTH
+.width-240 {
+    width: 240px;
+
+    @media (max-width:480px) {
+        width: 100%;
+    }
+}
